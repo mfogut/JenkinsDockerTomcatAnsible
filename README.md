@@ -1,6 +1,6 @@
-## DevOps Project
+# DevOps Project
 
-# AWS Services for Jenkins Instance
+## AWS Services for Jenkins Instance
 - AMI : Amazon Linux 2 AMI (HVM) as operating system.
 - Instance Type : t2.micro.
 - VPC : AWS Default VPC.
@@ -11,7 +11,7 @@
     - Inbound Rules for Jenkins port 8080 Source Anywhere.
 - Used existing key pair(.pem file) to access to Jenkins server over SSH.
 
-# Jenkins Server Configuration
+## Jenkins Server Configuration
 - Logout ec2-user and login root user --> sudo su - 
 - Change hostname to Jenkins --> hostnamectl set-hostname "jenkins"
 - Install Java 1.8 (Jenkins prerequisite) --> yum install java-1.8* -y
@@ -29,7 +29,7 @@
 - Install Publish over SSH to Jenkins GUI to Send build artifacts over SSH (integration Docker to Jenkins)--> Manage Jenkins -->Manage Plugins -->Available --> Publish over SSH
 - 
 
-# Tomcat Server Configuration
+## Tomcat Server Configuration
 - Spin up EC2 instance with following same step of Jenkins Server.
 - Logout ec2-user and login root user --> sudo su -
 - Change hostname to Jenkins --> hostnamectl set-hostname "tomcat"
@@ -42,7 +42,7 @@
 - Deploy war file to Tomcat server via Jenkins as a Maven Project.
 - Test tomcat server exit criteria hit tomcat server ip_address:port_number on web browser.
 
-# Docker Server Configuration
+## Docker Server Configuration
 - Spin up EC2 instance with following same step of Jenkins Server.
 - Logout ec2-user and login root user --> sudo su -
 - Change hostname to Jenkins --> hostnamectl set-hostname "docker"
@@ -57,7 +57,7 @@
 - Deploy war to Docker Container.
 - Test docker container exit criteria hit docker container ip_address:port_number on web browser.
 
-# Ansible Server Configuration
+## Ansible Server Configuration
 - Spin up EC2 instance with following same step of Jenkins Server.
 - Logout ec2-user and login root user --> sudo su -
 - Change hostname to Jenkins --> hostnamectl set-hostname "ansible-controller"
