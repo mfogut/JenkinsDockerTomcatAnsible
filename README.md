@@ -9,7 +9,7 @@
 - Security Group created.
     - Inbound Rules for SSH port 22 Source Anywhere.
     - Inbound Rules for Jenkins port 8080 Source Anywhere.
-- Used existing key pair(.pem file) to access to Jenkins server over SSH.
+- Used existing key pair(.pem file) to access to all instances over SSH.
 
 ## Jenkins Server Configuration
 - Logout ec2-user and login root user --> sudo su - 
