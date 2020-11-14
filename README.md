@@ -1,6 +1,6 @@
 # DevOps Project
 
-## AWS Services for Jenkins Instance
+## AWS Services for Jenkins, Tomcat, Docker, Ansible Instances
 - AMI : Amazon Linux 2 AMI (HVM) as operating system.
 - Instance Type : t2.micro.
 - VPC : AWS Default VPC.
