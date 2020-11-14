@@ -62,10 +62,14 @@
 - Logout ec2-user and login root user --> sudo su -
 - Change hostname to Jenkins --> hostnamectl set-hostname "ansible-controller"
 - Install python pip(python package manager) --> yum install python-pip -y
+- Install Ansible --> pip install ansible
+- Install Docker --> yum install docker -y
+- Start Docker --> service docker start
 - Create ansible user in Ansible Server --> useradd ansadmin , psswd username password
 - Add ansadmin user to sudoers file --> visudo
     - ansaddmin ALL=(ALL)   NOPASSWD:ALL
 - Add created user to docker group --> usermod -aG docker username
+- Create ssh key under /.ssh/ file -- > ssh-keygen
 - Create ansible user in Docker Server --> useradd ansadmin , psswd username password
 - Copy Ansible Server ssh id to Docker server --> ssh-copy-id Docker-Server-Private-IP
 - Insert ansadmin user password.
